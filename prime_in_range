@@ -11,3 +11,20 @@ for i in range(a,b+1):
         else:
             c=c+1
 print(c)
+
+====================OR=========================
+a=int(input())
+b=int(input())
+l=[True]*(b+1)
+l[0]=False
+l[1]=False
+for i in range(2,b+1):
+    if l[i]==True:
+        for j in range(i*i,b+1,i):
+            l[j]=False
+c=0
+for i in range(a,b+1):
+    if l[i]==True:
+        c=c+1
+print(c)
+
