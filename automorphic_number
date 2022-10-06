@@ -1,0 +1,14 @@
+n=int(input())
+s=n*n
+t=n
+f=0
+while(t>0):
+    if(t%10!=s%10):
+        f=1
+        break
+    t=t//10
+    s=s//10
+if(f==1):
+    print("Not an Automorphic Number")
+else:
+    print("Automorphic Number")
