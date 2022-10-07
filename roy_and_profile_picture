@@ -1,0 +1,12 @@
+t=int(input())
+n=int(input())
+while(n>0):
+    a,b=map(int,input().split())
+    if(a<t or b<t):
+        print("UPLOAD ANOTHER")
+    elif(a>=t and b>=t):
+        if(a==b):
+            print("ACCEPTED")
+        else:
+            print("CROP IT")
+    n-=1
