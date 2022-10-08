@@ -1,0 +1,10 @@
+def dis(n):
+    a=0
+    for i in range(len(str(n))):
+        a+=int(str(n)[i]) ** (i + 1)
+    return a==n
+n=int(input())
+if(dis(n)):
+    print("True")
+else:
+    print("False")
