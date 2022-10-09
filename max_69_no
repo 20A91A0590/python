@@ -1,0 +1,17 @@
+n=int(input())
+l=0
+a=n
+b=n
+c=n
+count=10
+while(b):
+    d=n%10
+    n=n//10
+    if(d==6):
+        if(n==1):
+            n=0
+        c=n*count+9*(count//10)+l
+    l=a%count
+    b=b//10
+    count=count*10;
+print(c)
