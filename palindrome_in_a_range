@@ -1,0 +1,12 @@
+a=int(input())
+b=int(input())
+for i in range(a,b+1):
+    x=i
+    y=x
+    s=0
+    while(x>0):
+        r=x%10
+        s=s*10+r
+        x=x//10
+    if(y==s):
+        print(y,end=" ")
