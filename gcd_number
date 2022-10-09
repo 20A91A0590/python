@@ -1,0 +1,12 @@
+def gcd(x,y):
+    if(y==0):
+        return x
+    while(y>0):
+        if(y>=x):
+            y=y-x
+        else:
+            x,y=y,x
+    return x
+x,y=map(int,input().split())
+z=gcd(x,y)
+print(z)
